@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-03-Message</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  
+
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="message">
+            <p >
+                <h3 style="text-align: center;font-weight: bold">Pass the Message</h3>
+            </p>
+            <p style="border-bottom: 2px solid #534a4a;"></p>
+            <p>
+                <label for="message-input">Enter a message</label> <br> <br>
+                <button style="border-radius: 5px 0 0 5px;"><i class="fa-regular fa-message"></i></button> <input id="message-input" type="text">
+            </p> <br>
+            <p>
+                <button onclick="getMessage()">Submet</button>
+            </p>
+            <P id="message-output" style="text-align: center; text-transform:uppercase"></P>
+
+        </div>
+    </div>
+    <div style="text-align:center">
+        <button onclick="generate()" type="button" class="btn btn-info">Grnarate Quotes</button>
+    </div>
+
+</body>
+<script src="./JS/Main.js"></script>
+
+</html>
