@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+body {
+    font-family: "Jersey 15", serif;
+  overflow: hidden;
+  background: conic-gradient(
+    from -0.5turn at bottom right,
+    deeppink,
+    cyan,
+    rebeccapurple
+  );
+}
+.container {
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digitalClock {
+  width: fit-content;
+  margin: auto;
+  color: white;
+  background: rgb(39, 1, 1, 0.1);
+  padding: 10px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.digitalClock h1 {
+  display: inline-block;
+  margin: 0 12px;
+  font-weight: 100;
+  font-size: 128px;
+}
+
+@media (max-width: 768px) {
+  #bar01,
+  #bar02 {
+    display: none;
+  }
+  .digitalClock {
+    text-align: center;
+    width: 100%;
+  }
+  .digitalClock h1 {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .digitalClock h1 {
+    font-size: 32px;
+  }
+}
