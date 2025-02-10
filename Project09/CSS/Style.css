@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playwrite IN", serif;
+  font-size: 16px;
+  background: url("https://images.unsplash.com/photo-1679565989825-a9c3ffdf2c9d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* background: rgb(243, 199, 247); */
+}
+
+button {
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid rgb(122, 110, 110);
+  border-radius: 5px;
+  background: rgb(248, 189, 248, .5);
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: red;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+}
+
+header {
+  background-color: rgb(187, 227, 245, 0.5);
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 20px;
+}
+
+#header h1 {
+  font-size: 32px;
+  color: blueviolet;
+}
+
+#header button {
+  font-family: inherit;
+  border: 1px solid rgb(104, 17, 89);
+}
+
+#create_card {
+  display: none;
+  width: 370px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 10px;
+  background: rgb(245, 245, 245, .7);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#create_card h2 {
+  color: blueviolet;
+  text-align: center;
+}
+
+#create_card textarea {
+  width: 100%;
+  border-radius: 5px;
+  font-family: inherit;
+  border: 1px solid lightgray;
+  resize: none;
+}
+
+#create_card button {
+  width: fit-content;
+}
+
+#flashcards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+
+.flashcard {
+  width: 370px;
+  height: 200px;
+  word-wrap: break-word;
+  margin: 10px;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+  position: relative;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.flashcard h2 {
+  font-size: 1rem;
+}
+
+.fa-minus {
+  top: 3%;
+  right: 2%;
+  position: absolute;
+  color: #1a1a1a;
+  transition: 0.3s ease-out;
+}
+
+.fa-minus:hover {
+  color: red;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .flashcard {
+    margin: auto;
+  }
+
+  .flashcard {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #header {
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #create_card {
+    width: 95%;
+  }
+
+  .flashcard {
+    width: 100%;
+  }
+}
