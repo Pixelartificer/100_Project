@@ -1,0 +1,159 @@
+body {
+  height: 10vh;
+  font-family: "Times New Roman", Times, serif;
+  background: conic-gradient(from -90deg at 50% 105%, white, orchid);
+}
+
+.container {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: rgb(228, 224, 224);
+  width: 400px;
+  margin: auto;
+  padding: 0 25px;
+  font-size: 16px;
+  font-weight: 200;
+  box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.5);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.calculator input {
+  box-sizing: border-box;
+  width: 80%;
+  padding: 8px;
+  outline: none;
+  border: 1px solid lightcyan;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.calculator button {
+  width: 10%;
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid lightcyan;
+  background-color: whitesmoke;
+  color: blueviolet;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.calculator button:hover {
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+#quality {
+  width: 92%;
+  padding: 8px;
+  outline: none;
+  border: 1px solid lightcyan;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+#tipAmount {
+  visibility: hidden;
+  min-width: 250px;
+  margin: auto;
+  background-color: limegreen;
+  color: white;
+  bottom: 30px;
+  text-align: center;
+  padding: 16px;
+  position: fixed;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+#tipAmount.Show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, faidOut 0.5s 2.5s;
+  animation: fadein 0.5s, faidOut 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes faidOut {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes faidOut {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculator input {
+    width: 85%;
+  }
+  .calculator button {
+    width: 15%;
+  }
+}
+
+@media (max-width: 320px) {
+  .calculator input {
+    width: 80%;
+  }
+}
