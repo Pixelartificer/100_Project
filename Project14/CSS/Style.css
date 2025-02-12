@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(170, 241, 212);
+}
+
+.container {
+  width: 360px;
+  height: 480px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.sky {
+  width: 100%;
+  height: 100%;
+  background-image: url(../Image/SKy.jpg);
+  background-size: cover;
+  box-shadow: 0 10px 10px;
+  border-radius: 20px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.container:hover .sky {
+  transform: perspective(20px) rotateX(2deg) translateY(-50px);
+  -webkit-transform: perspective(20px) rotateX(2deg) translateY(-50px);
+  -moz-transform: perspective(20px) rotateX(2deg) translateY(-50px);
+  -ms-transform: perspective(20px) rotateX(2deg) translateY(-50px);
+  -o-transform: perspective(20px) rotateX(2deg) translateY(-50px);
+}
+
+.bird {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  top: 9%;
+  left: 7%;
+  background-size: 100%;
+  background-image: url(../Image/bird01.png);
+  background-repeat: no-repeat;
+  animation-play-state: paused !important;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  animation: animate 0.2s linear infinite;
+  -webkit-animation: animate 0.2s linear infinite;
+}
+
+.container:hover .bird {
+  animation-play-state: running !important;
+  transform: translateY(-200px) translateX(-10px);
+  -webkit-transform: translateY(-200px) translateX(-10px);
+  -moz-transform: translateY(-200px) translateX(-10px);
+  -ms-transform: translateY(-200px) translateX(-10px);
+  -o-transform: translateY(-200px) translateX(-10px);
+}
+
+/* @keyframes animate {
+  from {
+    background-image: url("../bird01.png");
+  }
+  to {
+    background-image: url("../bird02.png");
+  }
+} */
