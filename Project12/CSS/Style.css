@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url(../Image/Galaxy.jpg);
+  /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 560px;
+    overflow: hidden;
+}
+
+.slider  .item h1{
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.slider  .item p{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.item{
+    position: absolute;
+    width: 360px;
+    height: 480px;
+    text-align: justify;
+    background-color: white;
+    padding: 20px;
+    left: calc(44% - 110px);
+    top: 0;
+    box-shadow: 0px 8px 24px -4px rgba(112, 111, 111, 0.3);
+    transition: 0.5s;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.item01{
+    background-image: url(../Image/01.png);
+    background-size: cover;
+}
+
+.item02{
+    background-image: url(../Image/02.jpg);
+    background-size: cover;
+}
+
+.item03{
+    background-image: url(../Image/03.jpg);
+    background-size: cover;
+}
+
+.item04{
+    background-image: url(../Image/04.jpg);
+    background-size: cover;
+}
+
+.item05{
+    background-image: url(../Image/05.jpg);
+    background-size: cover;
+}
+
+.item06{
+    background-image: url(../Image/06.jpg);
+    background-size: cover;
+}
+
+.item07{
+    background-image: url(../Image/07.jpg);
+    background-size: cover;
+}
+
+.item08{
+    background-image: url(../Image/08.jpg);
+    background-size: cover;
+}
+
+.item09{
+    background-image: url(../Image/09.jpg);
+    background-size: cover;
+}
+
+
+
+#next, #prev{
+    position: absolute;
+    top: 40%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 48px;
+    font-family: monospace;
+    font-weight: 500;
+    left: 50px;
+    cursor: pointer;
+}
+
+
+
+#next{
+    left: unset;
+    right: 50px;
+}
