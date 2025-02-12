@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../Image/09.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reating_box{
+    position: relative;
+    background: white;
+    padding: 24px 56px 36px;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+
+.reating_box h1{
+    margin-bottom: 24px;
+    color: rgb(2, 77, 52);
+    text-align: center;
+}
+
+.reating_box .stars{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+   justify-content: center;
+}
+
+.stars i{
+    color: #e6e6e6;
+    font-size: 36px;
+    cursor: pointer;
+    transition:  color .2s ease;
+    -webkit-transition:  color .2s ease;
+    -moz-transition:  color .2s ease;
+    -ms-transition:  color .2s ease;
+    -o-transition:  color .2s ease;
+}
+
+.stars i.active{
+  color: darkorange;
+}
+
+.button{
+  padding: 8px 16px;
+  background-color: coral;
+  border: none;
+  margin-top: 32px;
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.button:hover{
+  background-color: blueviolet;
+  color: white;
+}
