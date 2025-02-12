@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(../Image/bg.jpg) no-repeat center;
+  object-fit: cover;
+}
+
+.sliderWrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 72px 56px;
+}
+
+.cardList .cardItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  user-select: none;
+  padding: 36px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(32px);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.cardList .cardItem .userImage {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 40px;
+  border: 1px solid white;
+  padding: 4px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.cardList .cardItem .userProfession {
+  font-size: 18px;
+  color: #e3e3e3;
+  font-weight: 500;
+  margin: 16px 0 40px;
+}
+
+.cardList .cardItem .messageButton {
+  font-size: 20px;
+  padding: 8px 32px;
+  color: #030728;
+  font-weight: 500px;
+  background: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transform: 0.3s ease;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-transform: 0.3s ease;
+  -moz-transform: 0.3s ease;
+  -ms-transform: 0.3s ease;
+  -o-transform: 0.3s ease;
+}
+
+.cardList .cardItem .messageButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  color: white;
+}
+
+.sliderWrapper .swiper-pagination-bullet {
+  background-color: white;
+  height: 16px;
+  width: 16px;
+}
+
+.sliderWrapper .swiperSliderButton {
+  color: white;
+  margin-top: -50px;
+  transform: 0.2s ease;
+  -webkit-transform: 0.2s ease;
+  -moz-transform: 0.2s ease;
+  -ms-transform: 0.2s ease;
+  -o-transform: 0.2s ease;
+}
+
+.sliderWrapper .swiperSliderButton:hover {
+  color: #4658ff;
+}
+
+
+@media(max-width: 768px){
+    .sliderWrapper{
+        margin: 0 12px 40px;
+    }
+
+    .sliderWrapper .swiperSliderButton {
+        display: none;
+    }
+}
